@@ -1,0 +1,50 @@
+<div class="authorization-mini">
+	<div class="authorization-mini__top">
+		<button type="button" data-close="close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.46409 15.5355L15.5352 8.46446" stroke="#1F1F1E" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M8.46409 8.46447L15.5352 15.5355" stroke="#1F1F1E" stroke-width="1.5" stroke-linecap="round"/>
+			</svg>
+		</button>
+	</div>
+	<div class="authorization-mini__title block-title">
+		Авторизация
+	</div>
+	<form action="#" class="form form--authorization">
+		<div class="form__row">
+			<div class="group-label">
+				<label for="authorize-email" class="group-label__name group-label__name--input">
+					<span>Логин или e-mail</span>
+					<input type="text" class="input" id="authorize-email"
+					       placeholder="AlexanderProkhorov@gmail.com">
+				</label>
+				<div class="group-label__danger">
+					Попробуйте снова
+				</div>
+			</div>
+		</div>
+		<div class="form__row">
+			<div class="group-label">
+				<label for="authorize-password" class="group-label__name group-label__name--input">
+					<span>Пароль</span>
+					<input type="password" class="input" id="authorize-password"
+					       placeholder="">
+				</label>
+				<div class="group-label__danger">
+					Попробуйте снова
+				</div>
+			</div>
+		</div>
+		<button type="button" class="b-btn b-btn--primary">
+			Войти
+		</button>
+		<div class="form__group">
+			<button type="button" class="b-btn b-btn--text" data-modal-open="modalForm">
+				Регистрация
+			</button>
+			<button type="button" class="b-btn b-btn--text" data-modal-open="forGotPass">
+				Забыли пароль
+			</button>
+		</div>
+	</form>
+</div>

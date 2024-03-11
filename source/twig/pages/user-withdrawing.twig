@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Вывод партнёрских средств{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-withdrawing.twig' with {
+		class:'grid-layout__main--default'
+	} only %}
+{% endblock %}

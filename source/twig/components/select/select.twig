@@ -1,0 +1,31 @@
+<div class="select{{ class ? ' ' ~ class }}">
+	<div class="select__wrapper">
+		<div class="select__head">
+			<span class="select__selected">
+				{% if icon %}
+					<span class="label-icon">
+								{{ icon|raw }}
+					</span>
+				{% endif %}
+				{{ selected }}
+			</span>
+		</div>
+		<ul class="select__list list-reset">
+			{% for item in select %}
+				<li class="select__item">
+					<input type="radio" name="{{ item.type }}" value="{{ item.Value }}" id="{{ item.id }}"
+					       class="radio-hidden"
+							{{ item.checked ? ' checked' }}>
+					<label for="{{ item.id }}" class="radio-label">
+						{% if item.icon %}
+							<span class="label-icon">
+								{{ item.icon|raw }}
+							</span>
+						{% endif %}
+						<span class="label-text">{{ item.name }}</span>
+					</label>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,112 @@
+{% set news = [
+	{
+		'date': '2024-01-31',
+		'title': 'АМЛ регламент',
+		'text': [
+		'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+		 результате кардинга или взлома чужих кошельков.',
+		'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+		 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+		 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+		 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+	],
+		'link':false,
+		'btn':'Подробнее',
+		'data':'news-list',
+	},
+	{
+		'date': '2024-01-31',
+		'head':false,
+		'title': 'АМЛ регламент',
+		'text': [
+		'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+		 результате кардинга или взлома чужих кошельков.',
+		'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+		 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+		 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+		 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+	],
+		'link':false,
+		'btn':'Подробнее',
+		'data':'news-list',
+	},
+	{
+		'date': '2024-01-31',
+		'head':false,
+		'title': 'АМЛ регламент',
+		'text': [
+		'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+		 результате кардинга или взлома чужих кошельков.',
+		'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+		 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+		 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+		 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+	],
+		'link':false,
+		'btn':'Подробнее',
+		'data':'news-list',
+	},
+] %}
+
+<section class="grid-layout grid-layout--news">
+	<div class="container">
+		<h2 class="grid-layout__title section-title">
+			Новости
+		</h2>
+		<div class="grid-layout__wrapper">
+			<div class="grid-layout__main{{ class ? ' ' ~ class }}">
+				{% include '../../components/news-item.twig' with {
+					news:news
+				} only %}
+			</div>
+			<div class="grid-layout__secondary">
+				{% include '../../components/authorization.twig' %}
+				<div class="latest-exchanges">
+					{% include '../../blocks/latest-exchange.twig' with {
+						class:'latest-exchange--news',
+						title:'Последние обмены',
+						head:true,
+						cardExchange:[
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+						]
+					} only %}
+					<a href="exchange.html" class="b-btn b-btn--secondary">
+						Обменять валюту
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

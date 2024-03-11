@@ -1,0 +1,18 @@
+<div class="swiper swiper--marquee{{ class ? ' ' ~ class }}">
+	<div class="swiper-wrapper">
+		{% for item in marquee %}
+			<div class="swiper-slide">
+				<picture>
+					<source srcset="{{ item.img }}.webp 1x, {{ item.img }}@2x.webp 1.3x"
+					        type="image/webp">
+					<source srcset="{{ item.img }}.png 1x, {{ item.img }}@2x.png 1.3x"
+					        type="image/png">
+					<img src="{{ item.img }}" width="{{ item.width }}" height="{{ item.height }}"
+					     alt="{{ item.About }}"
+					     loading="lazy">
+				</picture>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+

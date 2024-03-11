@@ -1,0 +1,109 @@
+.s-block {
+	display         : flex;
+	flex-flow       : row nowrap;
+	justify-content : space-between;
+	align-items     : center;
+
+	a {
+		display         : flex;
+		transition      : opacity .3s ease;
+		align-items     : center;
+		justify-content : center;
+		padding         : 8px 8px;
+		@include hide-text;
+		border-radius   : 8px;
+
+		&:last-child {
+			margin-right : 0;
+		}
+
+		&:hover {
+
+		}
+	}
+}
+
+.s-block--hero {
+	display    : flex;
+	gap        : 8px;
+	margin-top : 48px;
+
+	@media screen and (min-width : $break-desktop) {
+		position       : absolute;
+		top            : 50%;
+		right          : 28px;
+		transform      : translateY(-50%);
+		flex-direction : column;
+		gap            : 16px;
+		z-index        : 3;
+		margin-top     : 0;
+	}
+
+	.s-block__item {
+		width            : 36px;
+		height           : 36px;
+		background-color : var(--secondary-color);
+		padding          : 8px 8px;
+		transition       : background-color .3s ease;
+
+		&:hover {
+			background-color : var(--primary-hover-color);
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width            : 48px;
+			height           : 48px;
+			background-color : var(--primary-color);
+			box-shadow       : 0 0 20px 0 rgba(206, 239, 76, 0.50);
+		}
+	}
+}
+
+.s-block--metaverse {
+	display         : flex;
+	justify-content : flex-start;
+	gap             : 8px;
+
+	@media screen and (min-width : $break-desktop) {
+		gap : 16px;
+	}
+
+	.s-block__item {
+		width            : 36px;
+		height           : 36px;
+		padding          : 8px 8px;
+		background-color : var(--primary-color);
+		box-shadow       : 0 0 20px 0 rgba(206, 239, 76, 0.50);
+		transition       : background-color .3s ease;
+
+		&:hover {
+			background-color : var(--primary-hover-color);
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width  : 44px;
+			height : 44px;
+		}
+	}
+}
+
+.s-block--footer {
+	justify-content : flex-start;
+	gap             : 8px;
+
+	.s-block__item {
+		width            : 40px;
+		height           : 40px;
+		padding          : 8px 8px;
+		background-color : transparent;
+		transition       : background-color .3s ease;
+
+		&:hover {
+			background-color : var(--active-secondary-color);
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			background-color : var(--hover-secondary-color);
+		}
+	}
+}

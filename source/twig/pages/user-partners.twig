@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Партнерский аккаунт{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-partners.twig' with {
+		class:'grid-layout__main--partners',
+	} only %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% for item in cardExchange %}
+	<div class="card-exchange {{ item.class ? 'box-panel' }}">
+		{% if head == true %}
+			<div class="card-exchange__head">
+				<div class="card-exchange__timestamp">
+					{{ item.date }}
+				</div>
+				<div class="card-exchange__timestamp">
+					{{ item.time }}
+				</div>
+			</div>
+		{% endif %}
+		<div class="card-exchange__body">
+			<div class="card-exchange__item">
+				<div class="card-exchange__icon">
+					<img src="{{ item.img }}" alt="">
+				</div>
+				<div class="card-exchange__wrap">
+					<div class="card-exchange__value">
+						{{ item.value }}
+					</div>
+					<div class="card-exchange__currency">
+						{{ item.currency }}
+					</div>
+				</div>
+			</div>
+			<div class="card-exchange__arrow">
+				<img src="images/icon/arrow.svg" alt="">
+			</div>
+			<div class="card-exchange__item">
+				<div class="card-exchange__icon">
+					<img src="{{ item.imgSecond }}" alt="">
+				</div>
+				<div class="card-exchange__wrap">
+					<div class="card-exchange__value">
+						{{ item.valueSecond }}
+					</div>
+					<div class="card-exchange__currency">
+						{{ item.currencySecond }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}

@@ -1,0 +1,140 @@
+.hero {
+	padding-bottom : 16px;
+
+	@media screen and (min-width : $break-desktop) {
+		padding-bottom : 28px;
+	}
+}
+
+.hero__wrapper {
+	padding         : 240px 23px 33px 23px;
+	display         : flex;
+	flex-direction  : column;
+	justify-content : center;
+	align-items     : center;
+	position        : relative;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+	@media screen and (min-width : $break-desktop) {
+		padding         : 48px 48px;
+		align-items     : flex-start;
+		justify-content : flex-start;
+		min-height      : 654px;
+	}
+
+	.b-btn--primary {
+		padding : 8px 24px;
+	}
+}
+
+.hero__title {
+	color         : var(--black-color);
+	text-align    : center;
+	font-family   : Unbounded;
+	font-size     : 24px;
+	font-weight   : 500;
+	line-height   : 133.333%;
+	margin-bottom : 16px;
+	@media screen and (min-width : $break-table) {
+
+	}
+	@media screen and (min-width : $break-desktop) {
+		text-align  : left;
+		font-size   : 48px;
+		font-weight : 500;
+		line-height : 104.167%;
+		max-width   : 762px;
+	}
+}
+
+.hero__text {
+	color          : var(--text-color);
+	text-align     : center;
+	font-family    : Inter;
+	font-size      : 16px;
+	font-style     : normal;
+	font-weight    : 500;
+	line-height    : 125%;
+	letter-spacing : -0.32px;
+	margin-bottom  : 24px;
+	@media screen and (min-width : $break-table) {
+
+	}
+	@media screen and (min-width : $break-desktop) {
+		text-align    : left;
+		font-size     : 24px;
+		font-weight   : 500;
+		line-height   : 125%;
+		max-width     : 528px;
+		margin-bottom : 40px;
+	}
+}
+
+.hero-img {
+	position  : absolute;
+	top       : 0;
+	left      : 50%;
+	transform : translateX(-50%);
+	width     : 100%;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+	@media screen and (min-width : $break-desktop) {
+		bottom    : -40px;
+		right     : 40px;
+		left      : unset;
+		top       : unset;
+		transform : unset;
+		width     : auto;
+	}
+}
+
+.hero-img__item {
+	position   : relative;
+	text-align : center;
+
+	@media screen and (min-width : $break-desktop) {
+		text-align : unset;
+	}
+
+	img {
+		position : relative;
+		z-index  : 2;
+		width    : 270px;
+
+		@media screen and (min-width : $break-table) {
+
+		}
+		@media screen and (min-width : $break-desktop) {
+			width : 733px;
+		}
+	}
+}
+
+.circle-bg {
+	position  : absolute;
+	z-index   : 1;
+	width     : 406px;
+	height    : 406px;
+	top       : 0;
+	left      : 50%;
+	transform : translateX(-50%);
+
+	@media screen and (min-width : $break-desktop) {
+		width     : 601px;
+		height    : 601px;
+		left      : 59%;
+		top       : 41%;
+		transform : translate(-59%, -41%);
+	}
+
+	svg {
+		stop:last-child {
+			stop-color : white;
+		}
+	}
+}
+

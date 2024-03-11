@@ -1,0 +1,58 @@
+.home-metaverse {
+	padding : 16px 0;
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 28px 0;
+	}
+}
+
+.home-metaverse__title {
+	margin-bottom : 0;
+}
+
+.home-metaverse__head {
+	display         : flex;
+	align-items     : center;
+	justify-content : flex-start;
+	gap             : 32px;
+	margin-bottom   : 26px;
+
+	@media screen and (min-width : $break-desktop) {
+		gap           : 32px;
+		margin-bottom : 34px;
+
+	}
+}
+
+.swiper--metaverse {
+	overflow : visible;
+
+	.swiper-wrapper {
+		@media screen and (min-width : $break-desktop) {
+			transform : unset !important;
+		}
+	}
+
+	.swiper-slide {
+		width         : 310px;
+		height        : 253px;
+		margin        : 0 12px;
+		border-radius : 16px;
+		overflow      : hidden;
+
+		@media screen and (min-width : $break-desktop) {
+			width : 31.5%;
+		}
+
+		img {
+			width      : 100%;
+			height     : 100%;
+			object-fit : cover;
+		}
+	}
+}
+
+.home-metaverse__wrap {
+	margin   : 0 -12px;
+	overflow : visible;
+}

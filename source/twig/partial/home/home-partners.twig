@@ -1,0 +1,51 @@
+{% set marquee = [
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+	{
+		'img':'images/home/partners/partners-1',
+		'width':'242',
+		'height':'56',
+	},
+] %}
+
+<section class="home-partners">
+	<div class="container">
+		<h2 class="home-partners__title section-title">
+			{{ partnersTitle }}
+		</h2>
+	</div>
+	<div class="home-partners__wrapper" data-slider="marquee-partners">
+		{% include '../../components/marquee.twig' with {
+			class:'swiper--partners',
+			marquee:marquee
+		} only %}
+	</div>
+</section>

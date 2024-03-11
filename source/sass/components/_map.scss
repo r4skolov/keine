@@ -1,0 +1,522 @@
+.map {
+	padding : 15px 0 16px 0;
+
+	@media screen and (min-width : 1239px) {
+		padding : 26px 0 28px 0;
+	}
+}
+
+.map__wrapper {
+	border-radius    : 16px;
+	box-shadow       : 0 0 24px 0 rgba(46, 0, 255, 0.16);
+	position         : relative;
+	min-height       : 654px;
+	background-color : var(--primary-color);
+	display          : flex;
+	flex-direction   : column;
+	justify-content  : center;
+	overflow         : hidden;
+
+	@media screen and (min-width : 1239px) {
+		overflow : visible;
+	}
+
+	img {
+		height     : 100%;
+		object-fit : cover;
+		max-width  : none;
+	}
+
+	.box-panel {
+		padding : 0;
+	}
+}
+
+.map__wrap {
+	display         : flex;
+	justify-content : center;
+
+	@media screen and (min-width : 1239px) {
+		justify-content : flex-end;
+	}
+}
+
+.map__img {
+	position : relative;
+	left     : -190px;
+
+	@media screen and (min-width : 800px) {
+		justify-content : flex-end;
+		left            : unset;
+	}
+}
+
+.map__list {
+	position  : absolute;
+	bottom    : -350px;
+	left      : 50%;
+	transform : translateX(-50%);
+	width     : 350px;
+	overflow  : hidden;
+	max-width : 283px;
+	height: 607px;
+	@media screen and (min-width : 1239px) {
+		left      : 44px;
+		top       : 50%;
+		transform : translateY(-50%) translateX(0);
+		bottom    : unset;
+		width     : 300px;
+		max-width : none;
+	}
+}
+
+
+
+.map-list {
+	overflow-y : auto;
+	height: 263px;
+
+	@media screen and (min-width : 1239px) {
+		height: 100%;
+	}
+
+	&::-webkit-scrollbar {
+		width  : 4px;
+		height : 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius    : 0;
+		background-color : transparent;
+	}
+
+	&::-webkit-scrollbar-track:active,
+	&::-webkit-scrollbar-track:hover {
+		background-color : transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius    : 5px;
+		background-color : var(--border-line);
+	}
+
+	&::-webkit-scrollbar-thumb:active,
+	&::-webkit-scrollbar-thumb:hover {
+		background-color : var(--border-line);
+	}
+}
+
+.map-list__item {
+	padding  : 24px 24px;
+	position : relative;
+
+	cursor   : pointer;
+
+	&:not(:last-child) {
+		border-bottom : 2px solid var(--border-line);
+	}
+
+	&:hover {
+		.map__name {
+			color      : var(--primary-color);
+			transition : color .3s ease;
+		}
+
+		.map__address {
+			color      : var(--primary-color);
+			transition : color .3s ease;
+		}
+	}
+
+	&.active {
+		.map__name {
+			color      : var(--primary-color);
+			transition : color .3s ease;
+		}
+
+		.map__address {
+			color      : var(--primary-color);
+			transition : color .3s ease;
+		}
+	}
+}
+
+
+.map__name {
+	transition     : color .3s ease;
+	font-size      : 18px;
+	line-height    : 133%;
+	letter-spacing : -0.02em;
+}
+
+.map__address {
+	transition     : color .3s ease;
+	font-size      : 14px;
+	line-height    : 129%;
+	letter-spacing : 0.02em;
+}
+
+.map-dot {
+	position : absolute;
+
+
+	&:nth-of-type(1) {
+		left : 53%;
+		top  : 33%;
+	}
+
+	&:nth-of-type(2) {
+		left : 56%;
+		top  : 45%;
+	}
+
+	&:nth-of-type(3) {
+		left : 57%;
+		top  : 43.5%;
+	}
+
+	&:nth-of-type(4) {
+		left : 56%;
+		top  : 30%;
+	}
+
+	&:nth-of-type(5) {
+		left : 56.7%;
+		top  : 33%;
+	}
+
+	&:nth-of-type(6) {
+		left : 57.6%;
+		top  : 38.5%;
+	}
+
+	&:nth-of-type(7) {
+		left : 58.4%;
+		top  : 39.7%;
+	}
+
+	&:nth-of-type(8) {
+		left : 58.8%;
+		top  : 40.5%;
+	}
+
+	&:nth-of-type(9) {
+		left : 59.1%;
+		top  : 41%;
+	}
+
+	&:nth-of-type(10) {
+		left : 59.5%;
+		top  : 41.5%;
+	}
+
+	&:nth-of-type(11) {
+		left : 58.9%;
+		top  : 38.5%;
+	}
+
+	&:nth-of-type(12) {
+		left : 59.4%;
+		top  : 39.4%;
+	}
+
+	&:nth-of-type(13) {
+		left : 59.9%;
+		top  : 40.2%;
+	}
+
+	&:nth-of-type(14) {
+		left : 61%;
+		top  : 41%;
+	}
+
+	&:nth-of-type(15) {
+		left : 57.4%;
+		top  : 29.6%;
+	}
+
+	&:nth-of-type(16) {
+		left : 59%;
+		top  : 34.6%;
+	}
+
+	&:nth-of-type(17) {
+		left : 59.9%;
+		top  : 37.7%;
+	}
+
+	&:nth-of-type(18) {
+		left : 59%;
+		top  : 30.2%;
+	}
+
+	&:nth-of-type(19) {
+		left : 60.8%;
+		top  : 34%;
+	}
+
+	&:nth-of-type(20) {
+		left : 60.5%;
+		top  : 29.3%;
+	}
+
+	&:nth-of-type(21) {
+		left : 61.4%;
+		top  : 31%;
+	}
+
+	&:nth-of-type(22) {
+		left : 62.2%;
+		top  : 32.4%;
+	}
+
+	&:nth-of-type(23) {
+		left : 62.4%;
+		top  : 33.8%;
+	}
+
+	&:nth-of-type(24) {
+		left : 62.7%;
+		top  : 30.4%;
+	}
+
+	&:nth-of-type(25) {
+		left : 63.4%;
+		top  : 31.4%;
+	}
+
+	&:nth-of-type(26) {
+		left : 64.9%;
+		top  : 30.2%;
+	}
+
+	&:nth-of-type(27) {
+		left : 65.3%;
+		top  : 28%;
+	}
+
+	&:nth-of-type(28) {
+		left : 66.6%;
+		top  : 29%;
+	}
+
+	&:nth-of-type(29) {
+		left : 67.8%;
+		top  : 27%;
+	}
+
+	&:nth-of-type(30) {
+		left : 69%;
+		top  : 29%;
+	}
+
+	&:nth-of-type(31) {
+		left : 70.5%;
+		top  : 26%;
+	}
+
+	&:nth-of-type(32) {
+		left : 71.5%;
+		top  : 29%;
+	}
+
+	&:nth-of-type(33) {
+		left : 71.2%;
+		top  : 32.9%;
+	}
+
+	&:nth-of-type(34) {
+		left : 72.8%;
+		top  : 28%;
+	}
+
+	&:nth-of-type(35) {
+		left : 75%;
+		top  : 25%;
+
+		.map-dot__description {
+			left          : unset;
+			border-radius : 16px 16px 0 16px;
+			right         : 3px;
+			@media screen and (min-width : 1920px) {
+				border-radius : 16px 16px 16px 0;
+				left          : 5px;
+				right         : unset;
+			}
+		}
+	}
+
+	&:nth-of-type(36) {
+		left : 77%;
+		top  : 30%;
+
+		.map-dot__description {
+			left          : unset;
+			border-radius : 16px 16px 0 16px;
+			right         : 3px;
+			@media screen and (min-width : 1920px) {
+				border-radius : 16px 16px 16px 0;
+				left          : 5px;
+				right         : unset;
+			}
+		}
+	}
+
+	&:nth-of-type(37) {
+		left : 85%;
+		top  : 34%;
+
+		.map-dot__description {
+			left          : unset;
+			border-radius : 16px 16px 0 16px;
+			right         : 3px;
+			@media screen and (min-width : 1920px) {
+				border-radius : 16px 16px 16px 0;
+				left          : 5px;
+				right         : unset;
+			}
+		}
+	}
+
+	&:nth-of-type(38) {
+		left : 86.5%;
+		top  : 33.6%;
+
+		.map-dot__description {
+			left          : unset;
+			border-radius : 16px 16px 0 16px;
+			right         : 3px;
+			@media screen and (min-width : 1920px) {
+				border-radius : 16px 16px 16px 0;
+				left          : 5px;
+				right         : unset;
+			}
+		}
+	}
+
+	&:nth-of-type(39) {
+		left : 86.1%;
+		top  : 38%;
+
+		.map-dot__description {
+			left          : unset;
+			border-radius : 16px 16px 0 16px;
+			right         : 3px;
+			@media screen and (min-width : 1920px) {
+				border-radius : 16px 16px 16px 0;
+				left          : 5px;
+				right         : unset;
+			}
+		}
+	}
+
+	&:nth-of-type(40) {
+		left : 69.1%;
+		top  : 41%;
+	}
+
+	&:nth-of-type(41) {
+		left : 63.6%;
+		top  : 52%;
+	}
+
+	&:nth-of-type(42) {
+		left : 64.6%;
+		top  : 52%;
+	}
+
+	&.active {
+		.map-dot__circle {
+			width   : 12px;
+			height  : 12px;
+			z-index : 99;
+		}
+
+		.map-dot__description {
+			opacity    : 1;
+			visibility : visible;
+			z-index    : 95;
+		}
+	}
+
+	&:hover {
+		.map-dot__circle {
+			width   : 12px;
+			height  : 12px;
+			z-index : 99;
+		}
+
+		.map-dot__description {
+			opacity    : 1;
+			visibility : visible;
+			z-index    : 95;
+		}
+	}
+}
+
+
+.map-dot__circle {
+	width            : 8px;
+	height           : 8px;
+	border-radius    : 100%;
+	background-color : #9747FF;
+	border           : 1px solid #FFF;
+	position         : relative;
+	z-index          : 2;
+	transition       : width .3s ease, height .3s ease;
+}
+
+.map-dot__description {
+	position         : absolute;
+	bottom           : 2px;
+	left             : 5px;
+	z-index          : 1;
+	background-color : #FFF;
+	border-radius    : 16px 16px 16px 0;
+	padding          : 16px;
+	opacity          : 0;
+	min-width        : 163px;
+	transition       : opacity .3s ease, visibility .3s ease;
+	visibility       : hidden;
+	box-shadow       : 0 0 24px 0 rgba(46, 0, 255, 0.16), 0 0 24px 0 rgba(46, 0, 255, 0.16);
+
+	@media screen and (min-width : 1239px) {
+		padding   : 24px;
+		min-width : 290px;
+	}
+}
+
+.map-dot__wrap {
+	position : relative;
+	z-index  : 1;
+}
+
+.map-dot__title {
+	font-weight    : 500;
+	font-size      : 16px;
+	line-height    : 125%;
+	letter-spacing : -0.02em;
+	color          : #1F1F1E;
+
+	@media screen and (min-width : 1239px) {
+		font-size   : 18px;
+		line-height : 133%;
+	}
+}
+
+.map-dot__text {
+	font-weight    : 400;
+	font-size      : 12px;
+	line-height    : 133%;
+	letter-spacing : 0.02em;
+	color          : var(--caption-color);
+
+	@media screen and (min-width : 1239px) {
+		font-size   : 14px;
+		line-height : 129%;
+	}
+}
+
+.map-dot__wrap {
+
+}

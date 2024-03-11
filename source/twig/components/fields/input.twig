@@ -1,0 +1,9 @@
+{% for item in input %}
+	<div class="group-label{{ class ? ' ' ~ class }}">
+		<label for="{{ item.for }}" class="group-label__name {{ item.classMode }}">
+			<span>{{ item.name }}</span>
+			<input type="{{ item.type }}" class="input" id="{{ item.id }}"
+			       placeholder="{{ item.placeholder }}">
+		</label>
+	</div>
+{% endfor %}

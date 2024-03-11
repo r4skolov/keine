@@ -1,0 +1,7 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Правила сайта{% endblock %}
+{% block page %}
+	{% include '../partial/rules/rules.twig' with {
+		class:'grid-layout__main--rules'
+	} only %}
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Ваши операции{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-operations.twig' with {
+		class:'grid-layout__main--operations',
+	} only %}
+{% endblock %}

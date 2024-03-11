@@ -1,0 +1,503 @@
+<div id="modalForm" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="modalForm">
+			<button type="button" class="modal__close" data-modal-close="modalForm">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper">
+				<div class="modal-form">
+					<div class="modal-form__title">
+						Регистрация
+					</div>
+					<div class="modal-form__wrapper">
+						<form action="#" class="form form--registration">
+							<div class="form__row">
+								<div class="group-label">
+									<label for="reg-login" class="group-label__name group-label__name--input">
+										<span>Логин</span>
+										<input type="text" class="input" id="reg-login"
+										       placeholder="Логин">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="reg-mail" class="group-label__name group-label__name--input">
+										<span>E-mail</span>
+										<input type="text" class="input" id="reg-mail"
+										       placeholder="E-mail">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="reg-password" class="group-label__name group-label__name--input">
+										<span>Пароль</span>
+										<input type="password" class="input" id="reg-password"
+										       placeholder="Пароль">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="repeat-password" class="group-label__name group-label__name--input">
+										<span>Пароль снова</span>
+										<input type="password" class="input" id="repeat-password"
+										       placeholder="Пароль">
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="checkbox checkbox--exchange">
+									<label for="reg-checkbox" class="checkbox-style">
+										<input type="checkbox" name="reg-checkbox" id="reg-checkbox">
+										<span>
+												С правилами сервиса ознакомлен и согласен
+										</span>
+									</label>
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--primary">
+								Регистрация
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalForm"></div>
+	</div>
+</div>
+<div id="modalAuthorization" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="modalAuthorization">
+			<button type="button" class="modal__close" data-modal-close="modalAuthorization">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper">
+				<div class="modal-form">
+					<div class="modal-form__title">
+						Авторизация
+					</div>
+					<div class="modal-form__wrapper">
+						<form action="#" class="form form--authorization">
+							<div class="form__row">
+								<div class="group-label">
+									<label for="modal-authorization-email"
+									       class="group-label__name group-label__name--input">
+										<span>Логин или e-mail</span>
+										<input type="text" class="input" id="modal-authorization-email"
+										       placeholder="AlexanderProkhorov@gmail.com">
+									</label>
+								</div>
+								<div class="group-label__danger">
+									Попробуйте снова
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="modal-authorization-password" class="group-label__name
+									group-label__name--input">
+										<span>Пароль</span>
+										<input type="password" class="input" id="modal-authorization-password"
+										       placeholder="">
+									</label>
+								</div>
+								<div class="group-label__danger">
+									Попробуйте снова
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--primary">
+								Войти
+							</button>
+							<div class="form__group">
+								<button type="button" class="b-btn b-btn--text" data-modal-open="modalForm">
+									Регистрация
+								</button>
+								<button type="button" class="b-btn b-btn--text" data-modal-open="forGotPass">
+									Забыли пароль
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalAuthorization"></div>
+	</div>
+</div>
+<div id="forGotPass" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="forGotPass">
+			<button type="button" class="modal__close" data-modal-close="forGotPass">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--reset">
+				<div class="modal-form">
+					<div class="modal-form__title">
+						Восстановление пароля
+					</div>
+					<div class="modal-form__wrapper ">
+						<form action="#" class="form form--registration form--danger">
+							<div class="form__row">
+								<div class="group-label group-label--danger">
+									<label for="forGotPass-label"
+									       class="group-label__name group-label__name--input">
+										<span>E-mail*</span>
+										<input type="text" class="input" id="forGotPass-label"
+										       placeholder="AlexanderProkhorov@gmail.com">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--primary" data-modal-open="forGotPass-next">
+								Сброс пароля
+							</button>
+							<div class="form__text form__text--success">
+								На ваш e-mail выслано письмо с подтверждением
+							</div>
+							<div class="form__text form__text--danger">
+								Ошибка! Вы ввели неверный e-mail
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalForm"></div>
+	</div>
+</div>
+<div id="forGotPass-next" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="forGotPass-next">
+			<button type="button" class="modal__close" data-modal-close="forGotPass-next">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--reset">
+				<div class="modal-form">
+					<div class="modal-form__title">
+						Восстановление пароля
+					</div>
+					<div class="modal-form__wrapper ">
+						<form action="#" class="form form--registration form--success">
+							<div class="form__row">
+								<div class="group-label group-label--success">
+									<label for="forGotPass-value"
+									       class="group-label__name group-label__name--input">
+										<span>Новый пароль</span>
+										<input type="password" class="input" id="forGotPass-value"
+										       placeholder="">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label group-label--success">
+									<label for="forGotPass-value-repeat"
+									       class="group-label__name group-label__name--input">
+										<span>Новый пароль повторно*</span>
+										<input type="password" class="input" id="forGotPass-value-repeat"
+										       placeholder="">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--primary">
+								Сохранить пароль
+							</button>
+							<div class="form__text form__text--success">
+								Пароль успешно сохранен
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalForm"></div>
+	</div>
+</div>
+<div id="news-one" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="news-one">
+			<button type="button" class="modal__close" data-modal-close="news-one">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--news">
+				{% include '../../components/news-item.twig' with {
+					news:[
+						{
+							'date':'10/11/2023',
+							'head':true,
+							'title': 'АМЛ регламент',
+							"tags": ["tag1", "tag2"],
+							"poster": "images/icon/user-banner",
+							'data':'test',
+							'text': [
+							'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+							 результате кардинга или взлома чужих кошельков.',
+							'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+							 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+							 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+							 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+						],
+							'link':true,
+							'btn':'К другим новостям',
+						},
+					]
+				} only %}
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalAuthorization"></div>
+	</div>
+</div>
+<div id="news-two" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="news-two">
+			<button type="button" class="modal__close" data-modal-close="news-two">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--news">
+				{% include '../../components/news-item.twig' with {
+					news:[
+						{
+							'date':'10/11/2023',
+							'head':true,
+							'title': 'АМЛ регламент2',
+							"tags": ["tag1", "tag2"],
+							"poster": "images/icon/user-banner",
+							'data':'test',
+							'text': [
+							'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+							 результате кардинга или взлома чужих кошельков.',
+							'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+							 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+							 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+							 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+						],
+							'link':true,
+							'btn':'К другим новостям',
+						},
+					]
+				} only %}
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalAuthorization"></div>
+	</div>
+</div>
+<div id="news-three" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="news-three">
+			<button type="button" class="modal__close" data-modal-close="news-three">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--news">
+				{% include '../../components/news-item.twig' with {
+					news:[
+						{
+							'date':'10/11/2023',
+							'head':true,
+							'title': 'АМЛ регламент3',
+							"tags": ["tag1", "tag2"],
+							"poster": "images/icon/user-banner",
+							'data':'test',
+							'text': [
+							'Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+							 результате кардинга или взлома чужих кошельков.',
+							'Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+							 AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+							 процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+							 процента в общей массе, даже если общий уровень риска ниже в общей массе...'
+						],
+							'link':true,
+							'btn':'К другим новостям',
+						},
+					]
+				} only %}
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalAuthorization"></div>
+	</div>
+</div>
+<div id="news-list" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="news-one">
+			<button type="button" class="modal__close" data-modal-close="news-one">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--news">
+				<div class="news-item">
+					<div class="news-item__date">
+						10/11/2023
+					</div>
+					<div class="news-item__title block-title">
+						АМЛ регламент
+					</div>
+					<div class="news-item__head">
+						<div class="news-item__tags">
+							<div class="news-item__tag">
+								tag1
+							</div>
+							<div class="news-item__tag">
+								tag2
+							</div>
+						</div>
+						<div class="news-item__poster">
+							<picture>
+								<source srcset="images/icon/user-banner.webp 1x, images/icon/user-banner@2x.webp 1.3x"
+								        type="image/webp">
+								<source srcset="images/icon/user-banner.jpg 1x, images/icon/user-banner@2x.jpg 1.3x"
+								        type="image/png">
+								<img src="images/icon/user-banner" width="435" height="327" alt="" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<div class="news-item__body">
+						<div class="news-item__text">
+							<p>
+								Все ваши криптовалютные транзакции должны быть легальными, и полученными не в
+								результате кардинга или взлома чужих кошельков.
+							</p>
+							<p>
+								Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров
+								AML bot и Getblock должна быть чистой и иметь общий уровень риска не более 50
+								процентов, а также мы не принимаем Stolen Coins и Scam с уровнем риска более 1
+								процента в общей массе, даже если общий уровень риска ниже в общей массе...
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalAuthorization"></div>
+	</div>
+</div>
+<div id="modalContact" class="modal" aria-hidden="true">
+	<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container" data-modal-close="modalForm">
+			<button type="button" class="modal__close" data-modal-close="modalForm">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.46458 15.5355L15.5356 8.46448" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+					<path d="M8.46458 8.46445L15.5356 15.5355" stroke="#1F1F1E" stroke-width="1.5"
+					      stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__wrapper">
+				<div class="modal-form">
+					<div class="modal-form__title">
+						Связаться
+					</div>
+					<div class="modal-form__wrapper">
+						<form action="#" class="form form--registration">
+							<div class="form__row">
+								<div class="group-label">
+									<label for="contact-name" class="group-label__name group-label__name--input">
+										<span>Ваше имя</span>
+										<input type="text" class="input" id="contact-name"
+										       placeholder="Имя">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="contact-mail" class="group-label__name group-label__name--input">
+										<span>Ваш e-mail</span>
+										<input type="text" class="input" id="contact-mail"
+										       placeholder="E-mail">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="contact-id"
+									       class="group-label__name group-label__name--input group-label__name--noImportant">
+										<span>ID обмена</span>
+										<input type="text" class="input" id="contact-id"
+										       placeholder="ID">
+									</label>
+									<div class="group-label__danger">
+										Попробуйте снова
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="group-label">
+									<label for="contact-textarea" class="group-label__name group-label__name--input">
+										<span>Сообщение</span>
+										<textarea class="textarea" name="contact-textarea" id="contact-textarea" cols=""
+										          rows="2" placeholder="Текст сообщения"></textarea>
+									</label>
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--primary">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="modalForm"></div>
+	</div>
+</div>

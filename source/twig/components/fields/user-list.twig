@@ -1,0 +1,12 @@
+<ul class="user-list list-reset">
+	{% for item in userList %}
+		<li class="user-list__item">
+			<div class="user-list__name">
+				{{ item.name }}
+			</div>
+			<div class="user-list__value">
+				{{ item.value }}
+			</div>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,107 @@
+<section class="grid-layout grid-layout--user">
+	<div class="container">
+		<h2 class="grid-layout__title section-title">
+			Партнерский FAQ
+		</h2>
+		<div class="grid-layout__wrapper grid-layout__wrapper--user">
+			<div class="grid-layout__main{{ class ? ' ' ~ class }}">
+				<div class="user box-panel">
+					<h5 class="user__title block-title">
+						Вопрос
+					</h5>
+					<div class="user__about">
+						<p>
+							Минимальная сумма для вывода 5 USD. Все выплаты проводятся после проверки администратором
+							учетной записи. Как правило, это занимает не более 24 часов с момента подачи заявки на
+							снятие средств
+						</p>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<h5 class="user__title block-title">
+						Вопрос
+					</h5>
+					<div class="user__about">
+						<p>
+							Минимальная сумма для вывода 5 USD. Все выплаты проводятся после проверки администратором
+							учетной записи. Как правило, это занимает не более 24 часов с момента подачи заявки на
+							снятие средств
+						</p>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<h5 class="user__title block-title">
+						Вопрос
+					</h5>
+					<div class="user__about">
+						<p>
+							Минимальная сумма для вывода 5 USD. Все выплаты проводятся после проверки администратором
+							учетной записи. Как правило, это занимает не более 24 часов с момента подачи заявки на
+							снятие средств
+						</p>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<h5 class="user__title block-title">
+						Вопрос
+					</h5>
+					<div class="user__about">
+						<p>
+							Минимальная сумма для вывода 5 USD. Все выплаты проводятся после проверки администратором
+							учетной записи. Как правило, это занимает не более 24 часов с момента подачи заявки на
+							снятие средств
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid-layout__secondary">
+				{% include '../../components/user/user-nav.twig' with {} only %}
+				<div class="latest-exchanges">
+					{% include '../../blocks/latest-exchange.twig' with {
+						class:'latest-exchange--news',
+						title:'Последние обмены',
+						head:true,
+						cardExchange:[
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+						]
+					} only %}
+					<a href="exchange.html" class="b-btn b-btn--secondary">
+						Обменять валюту
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

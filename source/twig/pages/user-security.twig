@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Настройки безопасности{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-security.twig' with {
+		class:'grid-layout__main--cabinet',
+	} only %}
+{% endblock %}

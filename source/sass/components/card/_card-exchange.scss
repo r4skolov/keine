@@ -1,0 +1,83 @@
+.card-exchange {
+	grid-column : 4 span;
+}
+
+.card-exchange__head {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	margin-bottom   : 24px;
+
+	@media screen and (min-width : $break-desktop) {
+		margin-bottom : 32px;
+	}
+}
+
+.card-exchange__timestamp {
+	color          : var(--caption-color);
+	font-size      : 14px;
+	font-weight    : 400;
+	line-height    : 128.571%;
+	letter-spacing : 0.28px;
+
+}
+
+.card-exchange__body {
+	display        : flex;
+	align-items    : flex-start;
+	flex-direction : column;
+	gap            : 15px;
+
+	@media screen and (min-width : $break-desktop) {
+		justify-content : space-between;
+		align-items     : center;
+		flex-direction  : row;
+	}
+}
+
+.card-exchange__icon {
+	flex-shrink : 0;
+}
+
+.card-exchange__arrow {
+	display         : flex;
+	flex-direction  : column;
+	justify-content : center;
+	position        : relative;
+	left            : 50%;
+	transform       : translateX(-50%) rotate(90deg);
+	height          : 33px;
+	@media screen and (min-width : $break-desktop) {
+		transform : unset;
+		left      : 0;
+		height    : auto;
+	}
+}
+
+.card-exchange__item {
+	display     : flex;
+	align-items : center;
+	gap         : 8px;
+}
+
+.card-exchange__value {
+	color          : var(--black-color);
+	font-size      : 16px;
+	font-weight    : 500;
+	line-height    : 125%;
+	letter-spacing : -0.32px;
+
+	@media screen and (min-width : $break-desktop) {
+		font-size      : 18px;
+		line-height    : 133.333%;
+		letter-spacing : -0.36px;
+	}
+}
+
+.card-exchange__currency {
+	color          : var(--caption-color);
+	font-size      : 14px;
+	font-weight    : 400;
+	line-height    : 128.571%;
+	letter-spacing : 0.28px;
+}

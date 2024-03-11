@@ -1,0 +1,52 @@
+{% set marquee = [
+	{
+		'img':'images/home/marquee-small/img-1',
+		'width':'80',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-2',
+		'width':'31',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-3',
+		'width':'104',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-4',
+		'width':'74',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-5',
+		'width':'99',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-6',
+		'width':'88',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-6',
+		'width':'88',
+		'height':'24',
+	},
+	{
+		'img':'images/home/marquee-small/img-7',
+		'width':'114',
+		'height':'24',
+	},
+] %}
+
+
+<div class="marquee marquee--small" data-slider="marquee-small">
+	<div class="marquee__wrapper">
+		{% include '../../components/marquee.twig' with {
+			class:'swiper--sm',
+			marquee:marquee
+		} only %}
+	</div>
+</div>

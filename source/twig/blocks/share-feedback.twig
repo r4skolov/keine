@@ -1,0 +1,43 @@
+<div class="share-feedback{{ class ? ' ' ~ class }}">
+	<h2 class="share-feedback__title block-title">
+		Поделиться отзывом
+	</h2>
+	<form action="#" class="form form--feedback">
+		<div class="form__row">
+			<div class="group-label">
+				<label for="feedback-name" class="group-label__name group-label__name--input">
+					<span>Введите Имя</span>
+					<input type="text" class="input" id="feedback-name"
+					       placeholder="Введите Имя">
+				</label>
+			</div>
+		</div>
+		<div class="form__row">
+			<div class="group-label">
+				<label for="feedback-email" class="group-label__name group-label__name--input">
+					<span>E-mail</span>
+					<input type="text" class="input" id="feedback-email"
+					       placeholder="AlexanderProkhorov@gmail.com">
+				</label>
+			</div>
+		</div>
+		<div class="form__row">
+			<div class="group-label">
+				<label for="feedback-textarea" class="group-label__name group-label__name--input">
+					<span>Текст отзыва</span>
+					<textarea class="textarea" name="feedback-textarea" id="feedback-textarea" cols="30" rows="4"
+					          placeholder="Расскажите о сервисе Keine Exchange"></textarea>
+				</label>
+				<div class="group-label__bottom counter">
+					<div class="counter__text">Helper text</div>
+					<div class="counter__num">
+						<span>0</span>/100
+					</div>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="b-btn b-btn--secondary">
+			Поделиться
+		</button>
+	</form>
+</div>

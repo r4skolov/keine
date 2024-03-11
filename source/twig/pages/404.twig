@@ -1,0 +1,36 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Ошибка{% endblock %}
+{% block page %}
+	<div class="error-page">
+		<div class="container">
+			<div class="error-page__wrapper box-panel">
+				<h1 class="error-page__title">
+					Oops...
+				</h1>
+				<div class="error-page__text">
+					Кажется, такой ссылки не существует. <br>по-пробуйте еще раз
+				</div>
+				<div class="error-page__img">
+					<picture>
+						<source srcset="images/icon/404.webp 1x, images/icon/404@2x.webp 1.3x"
+						        type="image/webp">
+						<source srcset="images/icon/404.png 1x, images/icon/404@2x.png 1.3x"
+						        type="image/png">
+						<img src="images/icon/404.png" width="539" height="435" alt="" loading="lazy">
+					</picture>
+					<svg class="circle-bg" width="601" height="601" viewBox="0 0 601 601" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<circle cx="300.5" cy="300.5" r="300.5" fill="url(#paint0_radial_113_14066)"/>
+						<defs>
+							<radialGradient id="paint0_radial_113_14066" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+							                gradientTransform="translate(300.5 300.5) rotate(90) scale(300.5)">
+								<stop stop-color="#CEEF4C"/>
+								<stop offset="0.989583" stop-color="white" stop-opacity="0"/>
+							</radialGradient>
+						</defs>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

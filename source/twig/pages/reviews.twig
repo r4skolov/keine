@@ -1,0 +1,8 @@
+{% extends "../template/layout.twig" %}
+{% set menuReviews = true %}
+{% block title %}Отзывы{% endblock %}
+{% block page %}
+	{% include '../partial/reviews/reviews-list.twig' with {
+		class:'box-panel'
+	} only %}
+{% endblock %}

@@ -1,0 +1,7 @@
+<div class="s-block{{ class ? ' ' ~ class }}">
+	{% for item in socials %}
+		<a href="{{ item.link }}" class="s-block__item" target="_blank" rel="noopener nofollow">
+			{{ item.icon }}
+		</a>
+	{% endfor %}
+</div>

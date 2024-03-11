@@ -1,0 +1,8 @@
+{% extends "../template/layout.twig" %}
+{% set menuExchange = true %}
+{% block title %}Обмен{% endblock %}
+{% block page %}
+	{% include '../partial/exchange/exchange.twig' with {
+		
+	} only %}
+{% endblock %}

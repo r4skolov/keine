@@ -1,0 +1,36 @@
+{% set langs  = [
+	{
+		'class':true,
+		'path':'index.html',
+		'name':'Русский'
+	},
+	{
+		'class':false,
+		'path':'index-en.html',
+		'name':'English'
+	},
+	{
+		'class':false,
+		'path':'index-es.html',
+		'name':'Español'
+	},
+
+] %}
+
+<div class="lang-panel{{ class ? ' ' ~ class }}" data-dropdown="wrapper">
+	<button class="lang-panel__link" type="button" data-dropdown="button">
+		<span>{{ langCurrent }}</span>
+	</button>
+	<div class="lang-panel__dropdown">
+		<ul class="list-reset">
+			{% for item in langs %}
+				<li class="{{ item.class ? 'active' }}">
+					<a href="{{ item.path }}">
+						{{ item.name }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+

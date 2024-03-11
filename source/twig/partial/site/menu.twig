@@ -1,0 +1,33 @@
+<ul class="nav__list list-reset">
+	<li{% if menuHome %} class="active"{% endif %}>
+		<a href="index.html">
+			<span>{{ "Главная" }}</span>
+		</a>
+	</li>
+	<li{% if menuExchange %} class="active"{% endif %}>
+		<a href="exchange.html">
+			<span>{{ "Обмен" }}</span>
+		</a>
+	</li>
+	<li{% if menuNews %} class="active"{% endif %}>
+		<a href="news-list.html">
+			<span>{{ "Новости" }}</span>
+		</a>
+	</li>
+	<li{% if menuReviews %} class="active"{% endif %}>
+		<a href="reviews.html">
+			<span>{{ "Отзывы" }}</span>
+		</a>
+	</li>
+	<li{% if menuContacts %} class="active"{% endif %}>
+		<button type="button" data-modal-open="modalContact">
+			<span>{{ "Контакты" }}</span>
+		</button>
+	</li>
+	<li{% if menuFranchise %} class="active"{% endif %}>
+		<a href="index.html#franchise">
+			<span>{{ "Франшиза" }}</span>
+		</a>
+	</li>
+</ul>
+

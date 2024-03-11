@@ -1,0 +1,268 @@
+<section class="grid-layout grid-layout--user">
+	<div class="container">
+		<h2 class="grid-layout__title section-title">
+			Настройки безопасности
+		</h2>
+		<div class="grid-layout__wrapper grid-layout__wrapper--user">
+			<div class="grid-layout__main{{ class ? ' ' ~ class }}">
+				<div class="user box-panel">
+					<div class="user__wrapper">
+						<div class="user__wrap user__wrap--cabinet">
+							{% include '../../components/fields/input.twig' with {
+								input:[
+									{
+										'class':'group-label--user',
+										'for':'user-new-password',
+										'classMode':'group-label__name--input',
+										'name':'Новый пароль',
+										'type':'text',
+										'id':'user-new-password',
+										'placeholder':''
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-new-pass-repeat',
+										'classMode':'group-label__name--input',
+										'name':'Новый пароль повторно',
+										'type':'text',
+										'id':'user-new-pass-repeat',
+										'placeholder':''
+									},
+								]
+							} only %}
+						</div>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<div class="user__wrapper user__wrapper--security">
+						<div class="user__wrap">
+							<h5 class="user__title block-title">Telegram</h5>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Уведомление при авторизации</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'tg-no',
+											'id':'tg-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'tg'
+										},
+										{
+											'value':'tg-yes',
+											'id':'tg-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'tg'
+										},
+									]
+								} only %}
+							</div>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Авторизация по пин-коду</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'pinсode-no',
+											'id':'pinсode-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'pinсode'
+										},
+										{
+											'value':'pinсode-yes',
+											'id':'pinсode-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'pinсode'
+										},
+									]
+								} only %}
+							</div>
+						</div>
+					</div>
+					<div class="user__wrapper user__wrapper--security">
+						<div class="user__wrap">
+							<h5 class="user__title block-title">E-mail</h5>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Уведомление при авторизации</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'mail-no',
+											'id':'mail-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'mail'
+										},
+										{
+											'value':'mail-yes',
+											'id':'mail-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'mail'
+										},
+									]
+								} only %}
+							</div>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Авторизация по пин-коду</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'authorization-no',
+											'id':'authorization-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'authorization'
+										},
+										{
+											'value':'authorization-yes',
+											'id':'authorization-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'authorization'
+										},
+									]
+								} only %}
+							</div>
+						</div>
+					</div>
+					<div class="user__wrapper user__wrapper--security">
+						<div class="user__wrap">
+							<h5 class="user__title block-title">SMS</h5>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Уведомление при авторизации</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'sms-notifications-no',
+											'id':'sms-notifications-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'sms-notifications'
+										},
+										{
+											'value':'sms-notifications-yes',
+											'id':'sms-notifications-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'sms-notifications'
+										},
+									]
+								} only %}
+							</div>
+							<div class="group-label">
+								<div class="group-label__name">
+									<span>Авторизация по пин-коду</span>
+								</div>
+								{% include '../../components/select/select.twig' with {
+									selected:'Нет',
+									select:[
+										{
+											'value':'sms-pin-no',
+											'id':'sms-pin-no',
+											'checked':true,
+											'name':'Нет',
+											'type':'sms-pin'
+										},
+										{
+											'value':'sms-pin-yes',
+											'id':'sms-pin-yes',
+											'checked':false,
+											'name':'Да',
+											'type':'sms-pin'
+										},
+									]
+								} only %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<div class="user__wrapper user__wrapper--security">
+						<div class="user__wrap">
+							{% include '../../components/fields/textarea.twig' with {
+								textarea:[
+									{
+										'for':'feedback',
+										'classMode':'group-label__name--input, group-label__name--noImportant',
+										'title':'Разрешенные IP-адреса',
+										'placeholder':'',
+										'text':'Каждый с новой строки'
+									},
+								]
+							} only %}
+						</div>
+					</div>
+				</div>
+				<button type="button" class="b-btn b-btn--primary">
+					Сохранить
+				</button>
+			</div>
+			<div class="grid-layout__secondary">
+				{% include '../../components/user/user-nav.twig' with {} only %}
+				<div class="latest-exchanges">
+					{% include '../../blocks/latest-exchange.twig' with {
+						class:'latest-exchange--news',
+						title:'Последние обмены',
+						head:true,
+						cardExchange:[
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+						]
+					} only %}
+					<a href="exchange.html" class="b-btn b-btn--secondary">
+						Обменять валюту
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

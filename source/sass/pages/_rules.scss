@@ -1,0 +1,42 @@
+.rules-site {
+	padding : 16px 24px;
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 16px 32px;
+	}
+
+	&:not(:last-child) {
+		margin-bottom : 24px;
+
+		@media screen and (min-width : $break-desktop) {
+			margin-bottom : 32px;
+		}
+	}
+}
+
+.rules-site__title {
+	margin-bottom : 24px;
+}
+
+.rules-site__text {
+	color          : var(--text-color);
+	font-size      : 16px;
+	font-weight    : 500;
+	line-height    : 125%;
+	letter-spacing : -0.32px;
+
+	@media screen and (min-width : $break-desktop) {
+		font-size      : 18px;
+		line-height    : 133.333%;
+		letter-spacing : -0.36px;
+	}
+
+
+	p {
+		&:not(:last-child) {
+			margin-bottom : 32px;
+		}
+	}
+}
+
+

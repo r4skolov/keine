@@ -1,0 +1,92 @@
+.card-reviews {
+	padding        : 24px 24px;
+	display        : flex;
+	flex-direction : column;
+	height         : 100%;
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 32px 32px;
+	}
+
+}
+
+.card-reviews__top {
+	margin-bottom : 16px;
+	display       : flex;
+	align-items   : center;
+	gap           : 8px;
+}
+
+.card-reviews__icon {
+	width  : 32px;
+	height : 32px;
+
+	svg {
+		width  : 100%;
+		height : 100%;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		width  : 48px;
+		height : 48px;
+	}
+}
+
+.card-reviews__name {
+	color       : var(--black-color);
+	font-size   : 18px;
+	font-weight : 500;
+	line-height : 133%;
+
+	@media screen and (min-width : $break-desktop) {
+		font-size   : 24px;
+		line-height : 125%;
+	}
+}
+
+.card-reviews__date {
+	color          : var(--caption-color);
+	font-size      : 14px;
+	font-weight    : 400;
+	line-height    : 128.571%;
+	letter-spacing : 0.28px;
+	margin-bottom  : 8px;
+}
+
+.card-reviews__text {
+	color          : var(--text-color);
+	font-size      : 16px;
+	font-weight    : 500;
+	line-height    : 125%;
+	letter-spacing : -0.32px;
+
+	@media screen and (min-width : $break-desktop) {
+		font-size      : 18px;
+		line-height    : 133.333%;
+		letter-spacing : -0.36px;
+	}
+}
+
+.card-reviews--page {
+	height        : unset;
+	padding       : 0;
+	border-bottom : 1px solid var(--border-line);
+
+	&:first-child {
+		padding-bottom : 40px;
+
+		@media screen and (min-width : $break-desktop) {
+			padding-bottom : 48px;
+		}
+	}
+
+	&:not(:first-child) {
+		padding-top    : 40px;
+		padding-bottom : 40px;
+
+		@media screen and (min-width : $break-desktop) {
+			padding-top    : 48px;
+			padding-bottom : 48px;
+		}
+	}
+}

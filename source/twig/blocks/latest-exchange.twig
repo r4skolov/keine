@@ -1,0 +1,11 @@
+<div class="latest-exchange{{ class ? ' ' ~ class }}">
+	<h2 class="latest-exchange__title section-title">
+		{{ title }}
+	</h2>
+	<div class="latest-exchange__wrapper">
+		{% include '../components/cards/card-exchange.twig' with {
+			head:head,
+			cardExchange:cardExchange
+		} only %}
+	</div>
+</div>

@@ -1,0 +1,37 @@
+.home-news {
+	position : relative;
+	padding  : 16px 0;
+	@media screen and (min-width : $break-desktop) {
+		padding : 28px 0;
+	}
+}
+
+
+.home-news__wrapper {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	align-items           : center;
+	grid-gap              : 24px;
+
+	@media screen and (min-width : $break-desktop) {
+		grid-template-columns : repeat(15, 1fr);
+		grid-gap              : 24px;
+	}
+
+	.home-news__btn {
+		position : absolute;
+		top      : 16px;
+		right    : 25px;
+
+		@media screen and (min-width : $break-desktop) {
+			grid-column : 13/16;
+			position    : unset;
+			top         : unset;
+			right       : unset;
+		}
+	}
+}
+
+.card-news--home {
+	grid-column : 4 span;
+}

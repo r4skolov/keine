@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Внутренний счёт{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-check.twig' with {
+		class:'',
+	} only %}
+{% endblock %}

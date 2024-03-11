@@ -1,0 +1,7 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Предупреждение{% endblock %}
+{% block page %}
+	{% include '../partial/alert/alert.twig' with {
+		class:'grid-layout__main--alert'
+	} only %}
+{% endblock %}

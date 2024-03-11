@@ -1,0 +1,35 @@
+{% extends "../template/layout.twig" %}
+{% set menuHome = true %}
+{% block title %}Главная{% endblock %}
+{% block page %}
+	{% include '../partial/home/hero.twig' with {
+		heroTitle:("Быстрый способ обменять электронную валюту"),
+		heroText:("Наши преимущества: программа лояльности, накопительная скидка и партнерская программа"),
+		heroBtn:("Обменять валюту"),
+	} only %}
+	{% include '../partial/home/marquee-small.twig' %}
+	{% include '../partial/home/map.twig' %}
+	{% include '../partial/home/exchange.twig' %}
+	{% include '../partial/home/warning.twig' %}
+	{% include '../partial/home/latest-exchange.twig' %}
+	{% include '../partial/home/currency-reserve.twig' with {
+		currTitle:'Резерв валюты',
+	} only %}
+	{% include '../partial/home/home-news.twig' with {
+		newsTitle:'Новости',
+	} only %}
+	{% include '../partial/home/home-reviews.twig' with {
+		reviewsTitle:'Отзывы',
+	} only %}
+	{% include '../partial/home/home-partners.twig' with {
+		partnersTitle:'Партнеры',
+	} only %}
+	{% include '../partial/home/home-metaverse.twig' with {
+		metaTitle:'Метавселенная',
+	} only %}
+	{% include '../partial/home/home-franchise.twig' %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="js/slider.min.js"></script>
+{% endblock %}

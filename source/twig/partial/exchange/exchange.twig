@@ -1,0 +1,255 @@
+<section class="exchange">
+	<div class="container">
+		<div class="exchange__top">
+			<h2 class="exchange__title">
+				Обмен Bitcoin BTC на Advanced Cash USD
+			</h2>
+			<div class="exchange__alert">
+				<h5 class="block-title">
+					Важное
+				</h5>
+				<div class="exchange__text exchange__text--alert">
+					<p>
+						Данная операция производится оператором в ручном режиме и занимает от 5 до 30 минут в рабочее
+						время (см. статус оператора).
+					</p>
+					<p>
+						Если ваша транзакция биткоин подтверждается более 60 минут — то при изменении курса на бирже
+						более чем на 1 процент, она будет пересчитана в
+						момент 1 подтверждения по текущему курсу биткоин
+					</p>
+				</div>
+			</div>
+			<div class="exchange__img">
+				<div>
+					<picture>
+						<source srcset="images/icon/lightning-exchange.webp 1x, images/icon/lightning-exchange@2x.webp 1.3x"
+						        type="image/webp">
+						<source srcset="images/icon/lightning-exchange.png 1x, images/icon/lightning-exchange@2x.png 1.3x"
+						        type="image/png">
+						<img src="images/icon/lightning-exchange.png" width="302" height="234" alt="" loading="lazy">
+					</picture>
+				</div>
+				<svg class="circle-bg" width="601" height="601" viewBox="0 0 601 601" fill="none"
+				     xmlns="http://www.w3.org/2000/svg">
+					<circle cx="300.5" cy="300.5" r="300.5" fill="url(#paint0_radial_113_14066)"/>
+					<defs>
+						<radialGradient id="paint0_radial_113_14066" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+						                gradientTransform="translate(300.5 300.5) rotate(90) scale(300.5)">
+							<stop stop-color="#CEEF4C"/>
+							<stop offset="0.989583" stop-color="white" stop-opacity="0"/>
+						</radialGradient>
+					</defs>
+				</svg>
+			</div>
+		</div>
+		<div class="exchange__wrap">
+			<div class="exchange__item box-panel">
+				<h5 class="block-title">Вы отдаёте</h5>
+				<div class="group-label">
+					<div class="group-label__name">
+						<span>Курс обмена: 1 BTC = 35778.5505 USD</span>
+					</div>
+					{% include '../../components/select/select.twig' with {
+						selected:'Bitcoin BTC',
+						icon:'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+								</svg>',
+						select:[
+							{
+								'value':'bitcoin1',
+								'id':'bitcoin1',
+								'checked':true,
+								'name':'Bitcoin BTC',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'giveSelect'
+
+							},
+							{
+								'value':'bitcoin2',
+								'id':'bitcoin2',
+								'checked':false,
+								'name':'Bitcoin BTC2',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'giveSelect'
+							},
+							{
+								'value':'bitcoin3',
+								'id':'bitcoin3',
+								'checked':false,
+								'name':'Bitcoin BTC3',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'giveSelect'
+							},
+						]
+					} only %}
+				</div>
+				<div class="group-label">
+					<label for="from-accounts" class="group-label__name group-label__name--input">
+						<span>Со счёта</span>
+						<input type="number" class="input" id="from-accounts">
+					</label>
+				</div>
+				<div class="group-label group-label--exchange">
+					<label for="from-accounts-sum" class="group-label__name group-label__name--input">
+						<span>Сумма</span>
+						<input type="number" class="input" id="from-accounts-sum">
+					</label>
+				</div>
+			</div>
+			<div class="exchange__item box-panel">
+				<h5 class="block-title">Вы получаете</h5>
+				<div class="group-label">
+					<div class="group-label__name">
+						<span>Валюта</span>
+					</div>
+					{% include '../../components/select/select.twig' with {
+						selected:'Bitcoin BTC',
+						icon:'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+								</svg>',
+						select:[
+							{
+								'value':'bitcoin6',
+								'id':'bitcoin6',
+								'checked':true,
+								'name':'Bitcoin BTC',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'getSelect'
+							},
+							{
+								'value':'bitcoin4',
+								'id':'bitcoin4',
+								'checked':false,
+								'name':'Bitcoin BTC2',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'getSelect'
+							},
+							{
+								'value':'bitcoin5',
+								'id':'bitcoin5',
+								'checked':false,
+								'name':'Bitcoin BTC3',
+								'icon':'<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48627 1.76792C4.72194 2.03144 1.75 5.16865 1.75 9C1.75 13.0041 4.99594 16.25 9 16.25C12.2079 16.25 14.9297 14.1662 15.8848 11.2787C15.1497 11.5824 14.3441 11.75 13.5 11.75C10.0482 11.75 7.25 8.95178 7.25 5.5C7.25 4.10086 7.71011 2.80909 8.48627 1.76792ZM0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C9.44962 0.25 9.89178 0.283976 10.3239 0.349619C10.6229 0.395029 10.8654 0.615534 10.9388 0.908862C11.0123 1.20219 10.9025 1.51095 10.6602 1.69194C9.49923 2.55935 8.75 3.94208 8.75 5.5C8.75 8.12335 10.8766 10.25 13.5 10.25C14.6342 10.25 15.6738 9.8534 16.4905 9.19064C16.7252 9.0002 17.0513 8.96923 17.3176 9.1121C17.584 9.25497 17.7386 9.54374 17.7097 9.8446C17.2843 14.2812 13.5477 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9Z" fill="white" fill-opacity="0.8" />
+										</svg>',
+								'type':'getSelect'
+							},
+						]
+					} only %}
+				</div>
+				<div class="group-label">
+					<label for="get-accounts" class="group-label__name group-label__name--input">
+						<span>На кошелёк Advcash</span>
+						<input type="number" class="input" id="get-accounts">
+					</label>
+				</div>
+				<div class="group-label group-label--exchange">
+					<label for="from-get-sum" class="group-label__name group-label__name--input">
+						<span>Сумма</span>
+						<input type="number" class="input" id="from-get-sum">
+					</label>
+				</div>
+			</div>
+			<div class="exchange__icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="8" viewBox="0 0 33 8"
+				     fill="none">
+					<path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464466C28.9763 0.269204 28.6597 0.269204 28.4645 0.464466C28.2692 0.659728 28.2692 0.976311 28.4645 1.17157L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.7308 28.9763 7.7308 29.1716 7.53553L32.3536 4.35355ZM0 4.5H32V3.5H0V4.5Z"
+					      fill="#1F1F1E"/>
+				</svg>
+			</div>
+		</div>
+		<div class="exchange__info box-panel">
+			<div class="exchange__left">
+				<h5 class="block-title">
+					Пользовательская информация
+				</h5>
+				<div class="group-label">
+					<label for="exchange-mail"
+					       class="group-label__name group-label__name--input">
+						<span>E-mail</span>
+						<input type="text" class="input" id="exchange-mail"
+						       placeholder="AlexanderProkhorov@gmail.com">
+					</label>
+				</div>
+				<button type="button" class="b-btn b-btn--primary">
+					Обменять валюту
+				</button>
+			</div>
+			<div class="exchange__right">
+				<div class="checkbox checkbox--exchange">
+					<label for="exchange-terms" class="checkbox-style">
+						<input type="checkbox" name="exchange-terms" id="exchange-terms">
+						<span>
+							Я прочитал и согласен с <a href="#">условиями обмена</a>
+						</span>
+					</label>
+				</div>
+				<div class="checkbox checkbox--exchange">
+					<label for="aml-rules" class="checkbox-style">
+						<input type="checkbox" name="aml-rules" id="aml-rules">
+						<span>
+							Я прочитал и согласен с <a href="#">правилами AML/KYC</a>
+						</span>
+					</label>
+				</div>
+				<div class="checkbox checkbox--exchange">
+					<label for="un-remember" class="checkbox-style">
+						<input type="checkbox" name="un-remember" id="un-remember">
+						<span>
+							Не запоминать введенные данные
+						</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="exchange__about">
+			<h5 class="block-title">
+				Обмен Bitcoin BTC на Advanced Cash USD
+			</h5>
+			<div class="exchange__text exchange__text--about">
+				<p>
+					Мы осуществляем AML проверку транзакций, ваша криптовалюта по оценке сканеров AML bot и Getblock
+					должна быть чистой и иметь общий уровень риска не более 50 процентов, а также мы не принимаем Stolen
+					Coins и Scam с уровнем риска более 1 процента в общей массе, даже если общий уровень риска ниже в
+					общей массе.
+				</p>
+				<p>
+					Для обмена Вам необходимо выполнить несколько шагов:
+				</p>
+				<ol>
+					<li>
+						Заполните все поля представленной формы. Нажмите кнопку «Обменять».
+					</li>
+					<li>
+						Ознакомьтесь с условиями договора на оказание услуг обмена, если вы принимаете их, поставьте
+						галочку в соответствующем поле и нажмите кнопку «Создать заявку».
+					</li>
+					<li>
+						Оплатите заявку. Для этого следует совершить перевод необходимой суммы, следуя инструкциям на
+						нашем сайте.
+					</li>
+					<li>
+						После выполнения указанных действий, система переместит Вас на страницу «Состояние заявки», где
+						будет указан статус вашего перевода.
+					</li>
+				</ol>
+				<p>
+					Внимание: для выполнения данной операции потребуется участие оператора (см. статус оператора).Если
+					ваша транзакция биткоин подтверждается более 60 минут — то при изменении курса на бирже более чем на
+					1 процент, она будет пересчитана в момент 1 подтверждения по текущему курсу биткоин.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

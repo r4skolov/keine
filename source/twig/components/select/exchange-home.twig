@@ -1,0 +1,17 @@
+<div class="select ">
+	<div class="select__wrapper">
+		<div class="select__head">
+			<span class="select__selected">{{ selected }}</span>
+		</div>
+		<ul class="select__list list-reset">
+			{% for item in selectExchange %}
+				<li class="select__item">
+					<input type="radio" name="{{ item.type }}" value="{{ item.Value }}" id="{{ item.id }}"
+					       class="radio-hidden"
+							{{ item.checked ? ' checked' }}>
+					<label for="{{ item.id }}" class="radio-label">{{ item.name }}</label>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

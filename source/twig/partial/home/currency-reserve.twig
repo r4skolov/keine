@@ -1,0 +1,63 @@
+{% set reserve  = [
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+	{
+		'icon':'images/icon/moon-big.svg',
+		'value':'Waves Waves',
+		'currency':'101.2032090239402402'
+	},
+] %}
+
+<section class="currency-reserve">
+	<div class="container">
+		<h2 class="currency-reserve__title section-title">
+			{{ currTitle }}
+		</h2>
+		<div class="currency-reserve__wrapper" data-slider="currency-slider">
+			<div class="swiper swiper--currency">
+				<div class="swiper-wrapper">
+					{% for item in reserve %}
+						<div class="swiper-slide">
+							{% include '../../components/cards/card-reserve.twig' with {
+								item:item
+							} only %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,62 @@
+.currency-reserve {
+	padding : 16px 0;
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 26px 0;
+	}
+}
+
+.currency-reserve__wrapper {
+	margin : 0 -25px;
+	@media screen and (min-width : $break-desktop) {
+		margin : 0;
+	}
+}
+
+
+.swiper--currency {
+	overflow : hidden;
+
+	@media screen and (min-width : $break-desktop) {
+		overflow : visible;
+	}
+
+	.swiper-wrapper {
+		@media screen and (min-width : $break-desktop) {
+			box-sizing            : unset;
+			display               : grid;
+			grid-gap              : 24px;
+			grid-template-columns : repeat(12, 1fr);
+			transform             : translate3d(0, 0, 0) !important;
+		}
+	}
+
+	.swiper-slide {
+		display : flex;
+		height  : auto;
+		margin  : 0 8px;
+		width   : 70%;
+
+		@media screen and (min-width : $break-desktop) {
+			grid-column : 3 span;
+			margin      : 0;
+			width       : 100%;
+		}
+
+		&:first-child {
+			margin-left : 24px;
+
+			@media screen and (min-width : $break-desktop) {
+				margin-left : 0;
+			}
+		}
+
+		&:last-child {
+			margin-right : 24px;
+
+			@media screen and (min-width : $break-desktop) {
+				margin-right : 0;
+			}
+		}
+	}
+}

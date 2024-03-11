@@ -1,0 +1,282 @@
+{% set currencyList = [
+	{
+		'id':'bitcoin',
+		'for':'bitcoin',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':true
+
+	},
+	{
+		'id':'bitcoin2',
+		'for':'bitcoin2',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin3',
+		'for':'bitcoin3',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin4',
+		'for':'bitcoin4',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin5',
+		'for':'bitcoin5',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin6',
+		'for':'bitcoin6',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin7',
+		'for':'bitcoin7',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin8',
+		'for':'bitcoin8',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin9',
+		'for':'bitcoin9',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+	{
+		'id':'bitcoin10',
+		'for':'bitcoin10',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'checked':false
+	},
+] %}
+
+{% set exchangeValue = [
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+	{
+		'link':'#',
+		'name':'Bitcoin BTC',
+		'icon':'images/icon/moon.svg',
+		'well':'1 → 39921.1524',
+		'reserve':'1 → 39921.1524'
+	},
+] %}
+<div class="home-exchange">
+	<div class="container">
+		<div class="home-exchange__wrapper">
+			<div class="home-exchange__wrap home-exchange__wrap--left">
+				{% include '../../components/select/select.twig' with {
+					class:'select--exchange',
+					selected:'Все',
+					select:[
+						{
+							'value':'all',
+							'id':'all',
+							'name':'Все',
+							'checked':true,
+							'type':'currentSelect'
+						},
+						{
+							'value':'usd',
+							'id':'usd',
+							'name':'USD',
+							'checked':false,
+							'type':'currentSelect'
+						},
+						{
+							'value':'cash',
+							'id':'cash',
+							'name':'cash',
+							'checked':false,
+							'type':'currentSelect'
+						},
+						{
+							'value':'crypto',
+							'id':'crypto',
+							'name':'crypto',
+							'checked':false,
+							'type':'currentSelect'
+						},
+						{
+							'value':'stablecoin',
+							'id':'stablecoin',
+							'name':'stablecoin',
+							'checked':false,
+							'type':'currentSelect'
+						},
+					]
+				} only %}
+				<div class="home-exchange__item">
+					<h3 class="home-exchange__title">
+						{{ "Вы отдаёте" }}
+					</h3>
+					<ul class="list-currency list-reset">
+						{% for item in currencyList %}
+							<li class="list-currency__item">
+								<input class="list-currency__input" type="radio" name="currency"
+								       id="{{ item.id }}" {{ item.checked ? ' checked' }}>
+								<label for="{{ item.for }}" class="list-currency__label">
+									{{ item.name }}
+									<img src="{{ item.icon }}" alt="{{ item.id }}">
+								</label>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="home-exchange__wrap home-exchange__wrap--right">
+				{% include '../../components/select/select.twig' with {
+					class:'select--exchange',
+					selected:'Все',
+					select:[
+						{
+							'value':'all2',
+							'id':'all2',
+							'name':'Все',
+							'checked':true,
+							'type':'getSelect'
+						},
+						{
+							'value':'usd2',
+							'id':'usd2',
+							'name':'USD',
+							'checked':false,
+							'type':'getSelect'
+						},
+						{
+							'value':'cash2',
+							'id':'cash2',
+							'name':'cash',
+							'checked':false,
+							'type':'getSelect'
+						},
+						{
+							'value':'crypto2',
+							'id':'crypto2',
+							'name':'crypto',
+							'checked':false,
+							'type':'getSelect'
+						},
+						{
+							'value':'stablecoin2',
+							'id':'stablecoin2',
+							'name':'stablecoin',
+							'checked':false,
+							'type':'getSelect'
+						},
+					]
+				} only %}
+				<div class="home-exchange__item ">
+					<div class="home-exchange__head">
+						<h3 class="home-exchange__title">
+							{{ "Вы получаете" }}
+						</h3>
+						<h3 class="home-exchange__title">
+							{{ "Курс" }}
+						</h3>
+						<h3 class="home-exchange__title">
+							{{ "Резерв" }}
+						</h3>
+					</div>
+					<div class="home-exchange__body">
+						{% for item in exchangeValue %}
+							<a href="{{ item.link }}" class="b-btn b-btn--transparent">
+						<span>
+							{{ item.name }}
+							<img src="{{ item.icon }}" alt="">
+						</span>
+								<span>{{ item.well|raw }}</span>
+								<span>{{ item.reserve }}</span>
+							</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

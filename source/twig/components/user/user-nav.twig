@@ -1,0 +1,71 @@
+{% set userNav = [
+	{
+		'link':'user-area.html',
+		'name':'Личный кабинет',
+	},
+	{
+		'link':'user-security.html',
+		'name':'Настройки безопасности',
+	},
+	{
+		'link':'user-accounts.html',
+		'name':'Ваши счета',
+	},
+	{
+		'link':'user-operations.html',
+		'name':'Ваши операции',
+	},
+	{
+		'link':'user-check.html',
+		'name':'Внутренний счет',
+	},
+	{
+		'link':'user-partners.html',
+		'name':'Партнерский аккаунт',
+	},
+	{
+		'link':'user-advertising.html',
+		'name':'Рекламные материалы',
+	},
+	{
+		'link':'user-transitions.html',
+		'name':'Партнерские переходы',
+	},
+	{
+		'link':'user-exchanges.html',
+		'name':'Партнерские обмены',
+	},
+	{
+		'link':'user-referrals.html',
+		'name':'Рефералы',
+	},
+	{
+		'link':'user-withdrawing.html',
+		'name':'Вывод партнерских средств',
+	},
+	{
+		'link':'user-faq.html',
+		'name':'Партнерский FAQ',
+	},
+	{
+		'link':'user-area.html',
+		'name':'Условия участия в партнерской программе',
+	}
+] %}
+
+
+<div class="user-nav box-panel">
+	<h5 class="user-nav__title block-title">
+		Личные данные
+	</h5>
+	<ul class="user-nav__list list-reset">
+		{% for item in userNav %}
+			<li>
+				<a href="{{ item.link }}">{{ item.name }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<button type="button" class="b-btn b-btn--secondary">
+		Выйти
+	</button>
+</div>

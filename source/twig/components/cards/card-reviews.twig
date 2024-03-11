@@ -1,0 +1,23 @@
+{% for item in reviews %}
+	<div class="card-reviews{{ class ? ' ' ~ class }} {{ item.class ? 'box-panel' }}">
+		<div class="card-reviews__top">
+			<div class="card-reviews__icon">
+				{{ item.icon }}
+			</div>
+			<div class="card-reviews__name">
+				{{ item.name }}
+			</div>
+		</div>
+		<div class="card-reviews__body">
+			<div class="card-reviews__date">
+				{{ item.date }}
+			</div>
+			<div class="card-reviews__text">
+				<p>
+					{{ item.text }}
+				</p>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+

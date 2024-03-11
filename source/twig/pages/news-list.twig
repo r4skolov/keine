@@ -1,0 +1,8 @@
+{% extends "../template/layout.twig" %}
+{% set menuNews = true %}
+{% block title %}Новости{% endblock %}
+{% block page %}
+	{% include '../partial/news/news-list.twig' with {
+		class:'box-panel'
+	} only %}
+{% endblock %}

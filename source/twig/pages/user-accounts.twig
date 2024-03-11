@@ -1,0 +1,7 @@
+{% extends "../template/layout-login.twig" %}
+{% block title %}Ваши счета{% endblock %}
+{% block page %}
+	{% include '../partial/user-data/user-accounts.twig' with {
+		class:'grid-layout__main--default',
+	} only %}
+{% endblock %}

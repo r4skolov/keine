@@ -1,0 +1,14 @@
+{% for table in tableAccounts %}
+	<div class="user-table{{ class ? ' ' ~ class }}">
+		{% for row in table.rows %}
+			<div class="user-table__row">
+				{% for item in row.items %}
+					<div class="user-table__item">
+						<div class="user-table__name">{{ item.name }}</div>
+						<div class="user-table__value">{{ item.value }}</div>
+					</div>
+				{% endfor %}
+			</div>
+		{% endfor %}
+	</div>
+{% endfor %}

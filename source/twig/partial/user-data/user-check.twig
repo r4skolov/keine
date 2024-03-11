@@ -1,0 +1,89 @@
+<section class="grid-layout grid-layout--user">
+	<div class="container">
+		<h2 class="grid-layout__title section-title">
+			Внутренний счёт
+		</h2>
+		<div class="grid-layout__wrapper grid-layout__wrapper--user">
+			<div class="grid-layout__main{{ class ? ' ' ~ class }}">
+				<div class="user box-panel">
+					{% include '../../components/fields/user-list.twig' with {
+						userList:[
+							{
+								'name':'ADA',
+								'value':'0'
+							},
+							{
+								'name':'ADA',
+								'value':'0'
+							},
+							{
+								'name':'ADA',
+								'value':'0'
+							},
+							{
+								'name':'ADA',
+								'value':'0'
+							},
+							{
+								'name':'ADA',
+								'value':'0'
+							},
+							{
+								'name':'ADA',
+								'value':'0'
+							}
+						]
+					} only %}
+				</div>
+			</div>
+			<div class="grid-layout__secondary">
+				{% include '../../components/user/user-nav.twig' with {} only %}
+				<div class="latest-exchanges">
+					{% include '../../blocks/latest-exchange.twig' with {
+						class:'latest-exchange--news',
+						title:'Последние обмены',
+						head:true,
+						cardExchange:[
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+						]
+					} only %}
+					<a href="exchange.html" class="b-btn b-btn--secondary">
+						Обменять валюту
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

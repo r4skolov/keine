@@ -1,0 +1,7 @@
+.warning {
+	padding : 16px 0;
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 28px 0;
+	}
+}

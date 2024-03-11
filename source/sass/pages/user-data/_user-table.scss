@@ -1,0 +1,80 @@
+.user-table {
+
+}
+
+.user-table__row {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	flex-wrap       : wrap;
+	gap             : 16px;
+
+	@media screen and (min-width : 1024px) {
+		gap : 0;
+	}
+
+	&:not(:last-child) {
+		border-bottom  : 1px solid var(--border-line);
+		padding-bottom : 24px;
+	}
+
+	&:not(:first-child) {
+		padding-top : 24px;
+	}
+}
+
+.user-table__item {
+	width : 23.3333%;
+	@media screen and (min-width : 800px) {
+		width : auto;
+	}
+}
+
+.user-table__name {
+	color          : var(--caption-color);
+	font-size      : 14px;
+	font-weight    : 400;
+	line-height    : 128.571%;
+	letter-spacing : 0.28px;
+}
+
+.user-table__value {
+	color          : var(--text-color);
+	font-size      : 16px;
+	font-weight    : 500;
+	line-height    : 125%;
+	letter-spacing : -0.32px;
+
+	@media screen and (min-width : 800px) {
+		font-size      : 18px;
+		line-height    : 133.333%;
+		letter-spacing : -0.36px;
+	}
+
+	&:not(:first-child) {
+		margin-top : 8px;
+
+		@media screen and (min-width : 800px) {
+			margin-top : 16px;
+		}
+	}
+}
+
+.user-table--accounts {
+	.user-table__item {
+		width : auto;
+		@media screen and (min-width : 800px) {
+			width : auto;
+		}
+	}
+}
+
+.user-table--transitions {
+	.user-table__item {
+		width : 45%;
+
+		@media screen and (min-width : 800px) {
+			width : auto;
+		}
+	}
+}

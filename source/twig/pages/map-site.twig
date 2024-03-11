@@ -1,0 +1,7 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Карта сайта{% endblock %}
+{% block page %}
+	{% include '../partial/map-site/map-site.twig' with {
+		class:'grid-layout__main--map'
+	} only %}
+{% endblock %}

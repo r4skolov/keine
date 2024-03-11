@@ -1,0 +1,71 @@
+// Variables
+// ---------
+:root {
+	--body-font-size                            : 16px;
+	--body-font                                 : "Inter", system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	--body-font-alt                             : Georgia, Times, Times New Roman, serif;
+	--body-line-height                          : 161%;
+	--body-color                                : #0B0334;
+	--body-background                           : #F9F7FF;
+
+	// Table
+	--table-header-font-weight                  : 700;
+	--table-cell-padding                        : 5px 10px;
+
+	// Text
+	--heading-font-weight                       : 700;
+	--heading-line-height                       : 1.2;
+	--heading-margin                            : 0 0 24px;
+	--paragraph-margin                          : 0 0 24px;
+	--list-margin                               : 1em 0;
+	--h1                                        : 28px;
+	--h2                                        : 24px;
+	--h3                                        : 20px;
+	--h4                                        : 18px;
+	--h5                                        : 24px;
+	--bold-font-weight                          : 700;
+	--text-small                                : 14px;
+
+	// Color
+	--main                                      : var(--body-color);
+	--red                                       : #F64344;
+	--link-color                                : #203735;
+	--link-color-hover                          : #37605C;
+
+	--primary-color                             : #CEEF4C;
+	--primary-hover-color                       : #BFE236;
+	--primary-active-color                      : #A7CE0D;
+	--secondary-color                           : #ECE9F5;
+	--scondary-dark-color                       : #302759;
+	--active-secondary-color                    : #B8A9FF;
+	--hover-secondary-color                     : #C6B9FF;
+	--background-color                          : #F9F7FF;
+
+	--black-color                               : #1F1F1E;
+	--text-color                                : #5E5E5D;
+	--caption-color                             : #B7B7B7;
+	--white-color                               : #FFF;
+	--negative-color                            : #F64344;
+	--green-color                               : #41CA4A;
+	--yellow-color                              : #FFF068;
+	
+	// Swiper
+	--swiper-theme-color                        : var(--main);
+	--swiper-preloader-color                    : var(--swiper-theme-color);
+	--swiper-wrapper-transition-timing-function : initial;
+
+	--base-boxshadow                            : 0 0 24px 0 rgba(46, 0, 255, 0.16);
+	--border-radius                             : 8px;
+	--border-line                               : #C6B9FF;
+
+	--padding-big                               : 32px 32px;
+	--padding-sm                                : 24px 24px;
+}
+
+// Breakpoints
+$break-desktop     : 1280px;
+$break-desktop-max : (1081 - 0.02) * 1px;
+$break-table       : 681px;
+$break-table-max   : (681 - 0.02) * 1px;
+
+

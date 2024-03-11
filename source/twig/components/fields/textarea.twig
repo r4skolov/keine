@@ -1,0 +1,16 @@
+{% for item in textarea %}
+	<div class="group-label{{ class ? ' ' ~ class }}">
+		<label for="{{ item.for }}-textarea" class="group-label__name {{ item.classMode }}">
+			<span>{{ item.title }}</span>
+			<textarea class="textarea" name="{{ item.for }}-textarea" id="{{ item.for }}-textarea" cols="30"
+			          rows="3"
+			          placeholder=""></textarea>
+		</label>
+		<div class="group-label__bottom counter">
+			<div class="counter__text">{{ item.text }}</div>
+			<div class="counter__num">
+				<span>0</span>/10000
+			</div>
+		</div>
+	</div>
+{% endfor %}

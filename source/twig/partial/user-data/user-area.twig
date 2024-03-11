@@ -1,0 +1,147 @@
+<section class="grid-layout grid-layout--user">
+	<div class="container">
+		<h2 class="grid-layout__title section-title">
+			Личный кабинет
+		</h2>
+		<div class="grid-layout__wrapper grid-layout__wrapper--user">
+			<div class="grid-layout__main{{ class ? ' ' ~ class }}">
+				<div class="user box-panel">
+					<div class="user__wrapper">
+						<h5 class="user__title block-title">Личные данные</h5>
+						<div class="user__wrap user__wrap--cabinet">
+							{% include '../../components/fields/input.twig' with {
+								input:[
+									{
+										'class':'group-label--user',
+										'for':'user-login',
+										'classMode':'group-label__name--input',
+										'name':'Логин',
+										'type':'text',
+										'id':'user-login',
+										'placeholder':'Логин'
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-lastname',
+										'classMode':'group-label__name--input',
+										'name':'Фамилия',
+										'type':'text',
+										'id':'user-lastname',
+										'placeholder':'Фамилия'
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-name',
+										'classMode':'group-label__name--input',
+										'name':'Имя',
+										'type':'text',
+										'id':'user-name',
+										'placeholder':'Фамилия'
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-surname',
+										'classMode':'group-label__name--input',
+										'name':'Отчество',
+										'type':'text',
+										'id':'user-surname',
+										'placeholder':'Отчество'
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-passport-id',
+										'classMode':'group-label__name--input',
+										'name':'Номер паспорта',
+										'type':'text',
+										'id':'user-passport-id',
+										'placeholder':'4536 567234'
+									},
+								]
+							} only %}
+						</div>
+					</div>
+				</div>
+				<div class="user box-panel">
+					<div class="user__wrapper">
+						<h5 class="user__title block-title">Контактные данные</h5>
+						<div class="user__wrap user__wrap--cabinet">
+							{% include '../../components/fields/input.twig' with {
+								input:[
+									{
+										'class':'group-label--user',
+										'for':'user-phone',
+										'classMode':'group-label__name--input',
+										'name':'Номер мобильного телефона',
+										'type':'text',
+										'id':'user-phone',
+										'placeholder':'+7 996 567-80-80'
+									},
+									{
+										'class':'group-label--user',
+										'for':'user-skype',
+										'classMode':'group-label__name--input',
+										'name':'Skype',
+										'type':'text',
+										'id':'user-skype',
+										'placeholder':'Прохоров'
+									},
+								]
+							} only %}
+						</div>
+					</div>
+				</div>
+				<button type="button" class="b-btn b-btn--primary">
+					Сохранить
+				</button>
+			</div>
+			<div class="grid-layout__secondary">
+				{% include '../../components/user/user-nav.twig' with {} only %}
+				<div class="latest-exchanges">
+					{% include '../../blocks/latest-exchange.twig' with {
+						class:'latest-exchange--news',
+						title:'Последние обмены',
+						head:true,
+						cardExchange:[
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+							{
+								'class':'box-panel',
+								'date':'10/11/2023',
+								'time':'21:02',
+								'img':'images/icon/moon-big.svg',
+								'value':'1016.26016',
+								'currency':'USD',
+								'imgSecond':'images/icon/moon-big.svg',
+								'valueSecond':'1016.26016',
+								'currencySecond':'USD',
+							},
+						]
+					} only %}
+					<a href="exchange.html" class="b-btn b-btn--secondary">
+						Обменять валюту
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
