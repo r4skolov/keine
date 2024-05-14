@@ -309,6 +309,74 @@
 			}
 		}
 	}
+
+	.pagination__item {
+		a {
+			background-color : rgba(255, 255, 255, 0.16);
+
+			&:hover {
+				background-color : var(--primary-color);
+				color            : #1F1F1E;
+			}
+
+			svg {
+				path {
+					fill : var(--white-color);
+				}
+			}
+		}
+
+		&.active {
+			a {
+				background-color : var(--primary-color);
+				color            : #1F1F1E;
+			}
+		}
+
+		&:first-child {
+			a {
+				background-color : transparent;
+
+				&:hover {
+					background-color : var(--primary-color);
+
+					svg {
+						path {
+							fill : #1F1F1E;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-child(5) {
+			a {
+				background-color : transparent;
+
+				&:hover {
+					background-color : var(--primary-color);
+					color            : unset;
+				}
+			}
+		}
+
+		&:last-child {
+			a {
+				background-color : transparent;
+
+				&:hover {
+					background-color : var(--primary-color);
+
+					svg {
+						path {
+							fill : #1F1F1E;
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
 
 .page-wrapper {
